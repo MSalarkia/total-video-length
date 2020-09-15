@@ -23,10 +23,14 @@ class Duration:
 
         return (self.hours, self.minutes, self.seconds)
 
+    def __repr__(self):
+        hours, minutes, seconds = self.duration
+        return f'Duration(hours={hours}, minutes={minutes}, seconds={seconds})'
+
 
 with open('./output.txt') as f:
     duration = Duration()
     for line in f:
         duration.add(line.strip('\n'))
 
-    print(duration.duration)
+    print(duration)
