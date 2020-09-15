@@ -6,4 +6,4 @@ In order to run the script you need to first install ffmpeg with the following c
   `sudo apt install ffmpeg`
   
  Then run:
-  ./script.sh
+  `./script.sh`
